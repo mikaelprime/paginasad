@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estado Emocional Web</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Triste</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <main class="contenedor">
-        <h1 id="estado">...</h1>
-        <p id="mensaje">...</p>
-    </main>
+    <div class="contenedor">
+        <h1>Estoy triste...</h1>
+        <p>No me visitan mucho últimamente.</p>
+        <button onclick="animarPagina()">¡Animar la página!</button>
+    </div>
+    <audio id="tristesonido" autoplay loop>
+        <source src="triste.mp3" type="audio/mp3">
+    </audio>
     <script src="estado.js"></script>
 </body>
 </html>
